@@ -38,10 +38,10 @@ font-weight: 600;
 .search {
     width: 7rem;
     outline: none;
+    height: 30%;
     border: none;
     border-radius: 5px;
     padding: 0.5rem;
-    height: 30%;
 }
 
 .cart {

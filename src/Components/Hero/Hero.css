@@ -1,4 +1,4 @@
-.container {
+.container2 {
 padding: 0rem 2rem;
 display: grid;
 grid-template-columns: 1fr 3fr 1fr; 
@@ -9,12 +9,61 @@ grid-template-columns: 1fr 3fr 1fr;
     justify-content: center;
     position: relative;
 }
-.wrapper img{
+.wrapper> img{
     position: absolute;
     width: 30rem;
     bottom: 0;
 }
-.h-sides {
+.blueCircle {
+    width: 30rem;
+    height: 30rem;
+    border-radius: 50%;
+    z-index: -99;
+    position: absolute;
+    bottom: 0;
+    background: Linear-gradient(135.74deg, #0bb5ff 14.09%, #6dd3fe 83.81%);
+}
+.cart2 {
+    position: absolute;
+    bottom: 25%;
+    right: 5%;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.cart2>svg {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    border: 6px solid var(--black);
+}
+.signup {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 10px;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    box-shadow: var(--shadow1);
+}
+.signup>:first-child {
+    display: block;
+    width: 6rem;
+}
+.signup>:nth-child(2) {
+    border-radius: 50%;
+    border: 1px solid skyblue;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.h_sides {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
@@ -24,25 +73,37 @@ grid-template-columns: 1fr 3fr 1fr;
     font-weight: 600;
     display: block;
     width: min-content;
-    
+}
+.text2 {
+    display: flex;
+    width: min-content;
+    flex-direction: column;
+    color: black;
 }
 
-.blueCircle {
-
+.text2>:first-child {
+    font-size: 2.5rem;
+    font-weight: 800;
 }
-
-
-
-.cart2 {
-
-}
-.signup {
-
+.text2>:nth-child(2) {
+    display: block;
 }
 .traffic {
-
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.traffic>:first-child {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.customers {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+.customers>:first-child {
+    font-weight: 800;
+    font-size: 2.5rem;
 }
 
-.customer {
-
-}

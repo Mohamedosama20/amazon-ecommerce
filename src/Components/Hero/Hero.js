@@ -5,13 +5,13 @@ import { BsArrowRight } from 'react-icons/bs' ;
 
 const Hero = () => {
   return (
-    <div className='container'>
+    <div className='container2'>
         {/* left side */}
-        <div className='h-sides'>
+        <div className='h_sides'>
             <span className='text1'>Skin Protection Cream</span>
             <div className='text2'>
                 <span>Trendy Collections</span>
-                <span>Seedily say has suitable disposal and boy. Exercise joy man children rejoiced.</span>
+                <span>Seedily say has suitable disposal and boy.<br/>Exercise joy man children rejoiced.</span>
             </div>
         </div>
         {/* middle side */}
@@ -29,7 +29,7 @@ const Hero = () => {
             </div>
         </div>
         {/* right side */}
-        <div className='h-sides'>
+        <div className='h_sides'>
             <div className='traffic'>
             <span>1.5m</span>
             <span>Monthly Traffic</span>
