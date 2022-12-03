@@ -1,0 +1,42 @@
+.p-container{
+    padding: 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+} 
+.p-container>:nth-child(1) {
+    position: absolute;
+    width: 8rem;
+    left: 30%;
+    top: -3rem;
+}
+.p-menu {
+    display:grid;
+    width: 90%;
+    grid-template-columns: 25% auto;
+}
+
+.p-menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight:500;
+}
+.p-menu-items>li:hover {
+    color: var(--pink);
+    cursor: pointer;
+}
+.p-list {
+
+}
+
+.p-img {
+
+}
+
+.p-left {}
