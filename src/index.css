@@ -3,4 +3,8 @@
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
+    transition: all 3ms ease;
+    background: var(--bg);
+    color: var(--black);
+    scroll-behavior: smooth;
 }
