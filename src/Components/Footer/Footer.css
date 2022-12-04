@@ -1,0 +1,77 @@
+.footer {
+    width: 100%;
+    margin-top: 5rem;
+}
+.footer hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background: white;
+    margin-top: 1rem;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.f-logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.f-logo>img {
+    width:2.5rem;
+    height: 2.5rem;
+}
+
+.f-logo>span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 12rem;
+}
+
+.f-detail {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    font-size: 0.7rem;
+    gap: 1rem;
+    font-style: italic;
+}
+.f-detail>span:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-style: normal;
+}
+.pngIcon {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.pngIcon:hover {
+    cursor: pointer;
+
+}
+
+.icon {
+    width: 25px;
+}
+
+.copy-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-size: 0.65rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
