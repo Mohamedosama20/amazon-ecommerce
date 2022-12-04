@@ -5,23 +5,27 @@ import {useState} from 'react';
 
 const Products = () => {
 const [MenuProducts, setMenuProducts] = useState(ProductsData);
+const filter = (type) => { 
+    setMenuProducts(ProductsData.filter((product) => 
+    product.type === type));
+}
   return (
     <div className='p-container'>
         <img src={Plane} alt='plane'/>
         <h1>Our Featured Products</h1>
         <div className='p-menu'>
                 <ul className='p-menu-items'>
-                    <li>All</li>
-                    <li>Skin Care</li>
-                    <li>Conditioners</li>
-                    <li>Foundations</li>
+                    <li onClick={()=> setMenuProducts(ProductsData)}>All</li>
+                    <li onClick={()=> filter('skin care')}>Skin Care</li>
+                    <li onClick={()=> filter('conditioner')}>Conditioners</li>
+                    <li onClick={()=> filter('foundation')}>Foundations</li>
                 </ul>
 
                 <div className='p-list'>
                 {
                     MenuProducts.map((product, i)=>( 
                     <div className='product'>
-                        <div className='p-left'>
+                        <div className='left-s'>
                             <div className='name'>
                                 <span>
                                     {product.name}
