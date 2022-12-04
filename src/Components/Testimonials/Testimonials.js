@@ -26,7 +26,17 @@ const Testimonials = () => {
                 spaceBetween={20}
                 slidesPerGroup={1}
                 className='t-carousal'
-                >
+                breakpoints={{
+                    856: {
+                    slidesPerView: 3
+                },
+                640: {
+                    slidesPerView: 2
+                },
+                0: {
+                    slidesPerView: 1
+                },
+                }}>
                     {
                         TestimonialsData.map((testimonial, i) => (
                             <SwiperSlide>

@@ -75,3 +75,21 @@
     font-weight: bold;
 }
 
+@media screen and (max-width:640px) {
+    .footer {
+        justify-content: center;
+    }
+    .f-logo {
+        display: none;
+    }
+}
+
+@media screen and(max-width: 768px) {
+    .footer {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        font-size: 1.7rem;
+        gap:2rem;
+    }
+}

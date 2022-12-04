@@ -84,3 +84,18 @@
 .testimonial>span:nth-of-type(2) {
     font-weight: 500;
 }
+
+@media screen and (max-width:640px) {
+    .t-wrapper {
+        grid-template-columns: 1fr ;
+    }
+
+    .t-wrapper>img {
+        width:80vw;
+    }
+
+    .t-wrapper>:nth-child(3), 
+    .t-wrapper>:nth-child(1) {
+        text-align: center;
+    }
+}
